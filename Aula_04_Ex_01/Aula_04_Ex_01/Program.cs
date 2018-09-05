@@ -10,22 +10,24 @@ namespace Aula_04_Ex_01
     {
         static void Main(string[] args)
         {
-            Circulo c1 = new Circulo();
-            Circulo c2 = new Circulo(10, 15, 4);
+            //Exemplo de sobrecarga de métodos
+            Figura[] figuras = new Figura[150];
+            double areas = 0;
 
-            Retangulo r1 = new Retangulo(5, 5, 10, 20);
+            for(int i = 0;  i < 50; i++)
+            {
+                figuras[i] = new Circulo(0, 0, i+1);
+                figuras[i+50] = new Retangulo(0, 0, i+1,i+1);
+                figuras[i+100] = new TrianguloRetangulo(0, 0, i+1, i+1);
+            }
 
-            TrianguloRetangulo t1 = new TrianguloRetangulo(3, 3, 10, 20);
+            
+            foreach (Figura f in figuras)
+                areas += f.Area();
 
-            Console.WriteLine(c1);
-            Console.WriteLine(c2);
-            Console.WriteLine(r1);
-            Console.WriteLine(t1);
+           
 
-            Console.WriteLine(c1.Area());
-            Console.WriteLine(c2.Area());
-            Console.WriteLine(r1.Area());
-            Console.WriteLine(t1.Area());
+            Console.WriteLine(areas);
 
             Console.Read();
 

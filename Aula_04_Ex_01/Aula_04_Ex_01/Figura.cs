@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aula_04_Ex_01
 {
-    class Figura
+    abstract class Figura
     {
         private int x, y;
 
@@ -21,10 +21,8 @@ namespace Aula_04_Ex_01
             return "[" + X + ", " + Y + "]";
         }
 
-        public virtual double Area()
-        {
-            return 0;
-        }
+        abstract public double Area();
+        
 
         public int X
         {
