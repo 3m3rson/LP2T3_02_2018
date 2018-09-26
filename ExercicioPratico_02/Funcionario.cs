@@ -26,7 +26,7 @@ namespace ExercicioPratico_02
 
         public override string ToString()
         {
-            return "[" + Cpf + ", " + Nome + ", " + idade + ", " + (Sexo? "F":"M")  + ", " + ValorVendido + "]";
+            return " [" + Cpf + ", " + Nome + ", " + idade + ", " + (Sexo? "F":"M")  + ", " + ValorVendido + "]";
         }
         public string Cpf
         {
