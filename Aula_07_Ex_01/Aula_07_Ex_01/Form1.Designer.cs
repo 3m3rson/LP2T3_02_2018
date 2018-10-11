@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbFiltrar = new System.Windows.Forms.Label();
             this.txtFiltrar = new System.Windows.Forms.TextBox();
+            this.lbFiltrar = new System.Windows.Forms.Label();
             this.gpAcervo = new System.Windows.Forms.GroupBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAdicionar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnVisualizar = new System.Windows.Forms.Button();
-            this.btnRemover = new System.Windows.Forms.Button();
             this.dgvAcervo = new System.Windows.Forms.DataGridView();
             this.cCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTitulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cAutor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnRemover = new System.Windows.Forms.Button();
+            this.btnVisualizar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnAdicionar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.gpAcervo.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAcervo)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,15 +58,6 @@
             this.panel1.Size = new System.Drawing.Size(690, 65);
             this.panel1.TabIndex = 0;
             // 
-            // lbFiltrar
-            // 
-            this.lbFiltrar.AutoSize = true;
-            this.lbFiltrar.Location = new System.Drawing.Point(9, 23);
-            this.lbFiltrar.Name = "lbFiltrar";
-            this.lbFiltrar.Size = new System.Drawing.Size(44, 17);
-            this.lbFiltrar.TabIndex = 0;
-            this.lbFiltrar.Text = "Filtrar";
-            // 
             // txtFiltrar
             // 
             this.txtFiltrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -76,6 +67,15 @@
             this.txtFiltrar.Size = new System.Drawing.Size(628, 22);
             this.txtFiltrar.TabIndex = 1;
             this.txtFiltrar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFiltrar_KeyDown);
+            // 
+            // lbFiltrar
+            // 
+            this.lbFiltrar.AutoSize = true;
+            this.lbFiltrar.Location = new System.Drawing.Point(9, 23);
+            this.lbFiltrar.Name = "lbFiltrar";
+            this.lbFiltrar.Size = new System.Drawing.Size(44, 17);
+            this.lbFiltrar.TabIndex = 0;
+            this.lbFiltrar.Text = "Filtrar";
             // 
             // gpAcervo
             // 
@@ -89,58 +89,6 @@
             this.gpAcervo.TabIndex = 1;
             this.gpAcervo.TabStop = false;
             this.gpAcervo.Text = "Acervo";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel2.Controls.Add(this.btnRemover);
-            this.panel2.Controls.Add(this.btnVisualizar);
-            this.panel2.Controls.Add(this.btnEditar);
-            this.panel2.Controls.Add(this.btnAdicionar);
-            this.panel2.Location = new System.Drawing.Point(4, 350);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(690, 69);
-            this.panel2.TabIndex = 2;
-            // 
-            // btnAdicionar
-            // 
-            this.btnAdicionar.Location = new System.Drawing.Point(135, 17);
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(94, 33);
-            this.btnAdicionar.TabIndex = 0;
-            this.btnAdicionar.Text = "Adicionar";
-            this.btnAdicionar.UseVisualStyleBackColor = true;
-            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(246, 17);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(94, 33);
-            this.btnEditar.TabIndex = 1;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnVisualizar
-            // 
-            this.btnVisualizar.Location = new System.Drawing.Point(359, 17);
-            this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(94, 33);
-            this.btnVisualizar.TabIndex = 2;
-            this.btnVisualizar.Text = "Visualizar";
-            this.btnVisualizar.UseVisualStyleBackColor = true;
-            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
-            // 
-            // btnRemover
-            // 
-            this.btnRemover.Location = new System.Drawing.Point(471, 17);
-            this.btnRemover.Name = "btnRemover";
-            this.btnRemover.Size = new System.Drawing.Size(94, 33);
-            this.btnRemover.TabIndex = 3;
-            this.btnRemover.Text = "Remover";
-            this.btnRemover.UseVisualStyleBackColor = true;
-            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // dgvAcervo
             // 
@@ -179,6 +127,58 @@
             this.cAutor.Name = "cAutor";
             this.cAutor.ReadOnly = true;
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel2.Controls.Add(this.btnRemover);
+            this.panel2.Controls.Add(this.btnVisualizar);
+            this.panel2.Controls.Add(this.btnEditar);
+            this.panel2.Controls.Add(this.btnAdicionar);
+            this.panel2.Location = new System.Drawing.Point(4, 350);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(690, 69);
+            this.panel2.TabIndex = 2;
+            // 
+            // btnRemover
+            // 
+            this.btnRemover.Location = new System.Drawing.Point(471, 17);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(94, 33);
+            this.btnRemover.TabIndex = 3;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
+            // 
+            // btnVisualizar
+            // 
+            this.btnVisualizar.Location = new System.Drawing.Point(359, 17);
+            this.btnVisualizar.Name = "btnVisualizar";
+            this.btnVisualizar.Size = new System.Drawing.Size(94, 33);
+            this.btnVisualizar.TabIndex = 2;
+            this.btnVisualizar.Text = "Visualizar";
+            this.btnVisualizar.UseVisualStyleBackColor = true;
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(246, 17);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(94, 33);
+            this.btnEditar.TabIndex = 1;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnAdicionar
+            // 
+            this.btnAdicionar.Location = new System.Drawing.Point(135, 17);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(94, 33);
+            this.btnAdicionar.TabIndex = 0;
+            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -189,11 +189,12 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gpAcervo.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAcervo)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

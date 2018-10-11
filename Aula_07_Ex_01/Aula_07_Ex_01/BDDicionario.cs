@@ -9,6 +9,7 @@ namespace Aula_07_Ex_01
     class BDDicionario : IDatabase
     {
         private static Dictionary<long, Livro> livros = new Dictionary<long, Livro>();
+        private static int i = 0;
 
         public void Delete(long codigo)
         {
@@ -27,7 +28,7 @@ namespace Aula_07_Ex_01
 
         public void Save(Livro l)
         {
-            l.Codigo = livros.Count;
+            l.Codigo = i++;
             livros.Add(l.Codigo,l);
         }
 

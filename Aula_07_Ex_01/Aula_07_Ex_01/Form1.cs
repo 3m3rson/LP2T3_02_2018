@@ -67,7 +67,7 @@ namespace Aula_07_Ex_01
 
         private void Fill(string filtro)
         {
-            IDatabase bd = new BDDicionario();
+            IDatabase bd = new BDMySql();
             List<Livro> list = bd.ListAll();
 
             dgvAcervo.Rows.Clear();
@@ -82,5 +82,9 @@ namespace Aula_07_Ex_01
             Fill(txtFiltrar.Text);
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Fill("");
+        }
     }
 }

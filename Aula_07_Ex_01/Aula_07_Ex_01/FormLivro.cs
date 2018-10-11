@@ -36,7 +36,7 @@ namespace Aula_07_Ex_01
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            IDatabase bd = new BDDicionario();
+            IDatabase bd = new BDMySql();
             if (salvar)
             {
                 bd.Save(new Livro(0,txtTitulo.Text, txtAutor.Text));

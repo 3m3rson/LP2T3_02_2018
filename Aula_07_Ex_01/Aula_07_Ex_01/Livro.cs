@@ -12,6 +12,11 @@
             this.Autor = autor;
         }
 
+        public Livro()
+        {
+
+        }
+
         public string Autor
         {
             get
